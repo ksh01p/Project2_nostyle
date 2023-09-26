@@ -1,6 +1,6 @@
 <html><head>
     <meta charset="utf-8">
-    <style>/* Stylesheet 2: */
+    <style>
     body {
         font-family: Arial;
         background-color: #d14836;
@@ -125,7 +125,7 @@
     </div>
     
     <script>
-    /*function noStyles() {
+    function noStyles() {
         document.styleSheets[0].disabled = true;
         document.styleSheets[1].disabled = true;
         document.styleSheets[2].disabled = true;
@@ -144,7 +144,7 @@
         stylediv = document.getElementById("stylediv")
         stylediv.parentNode.removeChild(stylediv);
     }
-    */
+    
     function showStyle(n) {
     var div, text, blackdiv;
     blackdiv = document.createElement("DIV");
@@ -158,7 +158,7 @@
     text = document.createTextNode(document.getElementsByTagName("STYLE")[n].innerHTML);
     div.appendChild(text);
     document.body.appendChild(div);
-    //alert(document.getElementsByTagName("STYLE")[n].innerHTML);
+    alert(document.getElementsByTagName("STYLE")[n].innerHTML);
     }
     reStyle(0);
     </script>
